@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='icon' href='data:;base64,='>
+  <title>project. Подсчет оценок</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <h1 class="nav-brand">Classroom</h1>
+  </nav>
+  
+  <main class="container">
+    <form id="grades-form">
+      <label class="label" for="component-name">Enter grade</label>
+      <input type="number" min="0" max="20" class="input" required placeholder="Grade (0 and 20)" id="your-grade">
+      <input type="submit" class="btn btn-accent" value="Add" />
+    </form>
+  
+    <table border="1" id="stats-table" class="table table-center">
+      <thead>
+        <tr>
+          <th width="33%">Number of tests taken</th>
+          <th width="33%">Sum of grades</th>
+          <th>Average grade</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table border="1" id="stats-table2" class="table table-center">
+      <thead>
+        <tr>
+          <th width="33%">Passing grades</th>
+          <th width="33%">Failing grades</th>
+          <th>Raised grades</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+  <script type="module" src="js/index.js"></script>
+
+</html>
