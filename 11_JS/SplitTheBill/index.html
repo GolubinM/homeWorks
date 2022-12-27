@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='icon' href='data:;base64,='>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="nav-brand">Split the bill</h1>
+      </nav>
+      
+      <main class="container">
+        <form id="amount-form">
+          <label class="label" for="component-name">Enter amount paid</label>
+          <input type="number" class="input" placeholder="Amount paid" id="amount" autocomplete="off">
+          <input type="submit" class="btn btn-accent" value="Add" />
+        </form>
+      
+        <div class="table-container">
+          <h2>Your bill</h2>
+            <table class="table" border="1">
+            <thead>
+              <tr>
+                <th width="50%">Description</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+            </table>
+        </div>
+      </main>
+      <script type="module" src="js/index.js"></script>
+</body>
+</html>
