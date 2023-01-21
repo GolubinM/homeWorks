@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home task 04 JS</title>
+    <link rel="icon" href="data:;base64,="> <!-- устраняет ошибку отсутствия иконки favicon.ico -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section>
+        <nav class="navbar">
+            <h1 class="nav-brand">task. Получение имени</h1>
+        </nav>
+        <div class="container task1-table">
+            <div class="unit">Введите имя в любом регистре,<br> с пробелами в конце и/или начале</div>
+            <div class="unit">length</div>
+            <div class="unit">Удалено пробелов</div>
+            <div class="unit">Результат: верхний регистр, без<br> начальных и конечных пробелов</div>
+            <div class="unit">length</div>
+            <input type="text" class="input" placeholder="text" id="inputName-1" value="   sam" autocomplete="off">
+            <div class="input width-auto" id="counterUnFormatted-1">6 </div>
+            <div class="input width-auto" id="counterDeletedSpace-1">3 </div>
+            <input type="text" class="input" placeholder="formated" value="SAM" disabled id="textFormatted-1"
+                autocomplete="off">
+            <div class="input width-auto" id="counterFormatted-1">3</div>
+        </div>
+    </section>
+
+    <section>
+        <nav class="navbar">
+            <h1 class="nav-brand">task. Celsius to Fahrenheit converter</h1>
+        </nav>
+        <div class="container">
+            <label class="label" for="c-input">Enter the number in Celsius</label>
+            <input type="number" class="input" placeholder="Number" id="c-input" autocomplete="off"> <span
+                class="unit">Celsius is</span>
+            <input type="number" class="input" placeholder="Result" disabled id="f-output" autocomplete="off">
+            Fahrenheit
+        </div>
+    </section>
+
+    <section>
+        <nav class="navbar hearts-backgraund" id="hearts-nav">
+            <h1 class="nav-brand">task. Closures. Pre-alpha name's "Formula of love".</h1>
+        </nav>
+        <div class="container  closure-task">
+            <button id="app-button">Start game</button>
+            <div class="counters">
+                <p>"game started!" - <input class="input game" disabled="" id="game-started" size="4"
+                        autocomplete="off"></p>
+                <p>"log analytics!" - <input class="input game" disabled="" id="log-analytics" size="4"
+                        autocomplete="off">
+                </p>
+            </div>
+            <div>Press the button <span class="incorrect-text"> 500</span> <span id="press-request"> 1 </span>time(s),
+                please... On start of the game hearts will come!</div>
+        </div>
+    </section>
+
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>

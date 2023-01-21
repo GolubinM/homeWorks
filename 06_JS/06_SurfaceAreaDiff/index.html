@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document updated</title>
+    <link rel='icon' href='data:;base64,='> <!-- устраняет ошибку отсутствия иконки favicon.ico -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 class="nav-brand">Surface area difference</h1>
+    </nav>
+    <main class="container">
+        <h2>Rectangle 1</h2>
+        <div>
+            <!--    Вставка в поле ввода(input) фрагмента 'value="0" onFocus="this.select()"' задает начальное нулевое значение,
+                чтобы избежать предупреждения в консоли (NaN), а такжу выделяет нулевое значение при переходе на поле по щелчку мыши,
+                для того чтобы избежать дополнительного редактирования(удаления нуля) в поле ввода. Это не исключает возможности
+                очистить поле ввода. 
+                    Если очистить значение в поле ввода, поле ввода будет возвращать пустую строку при нажатии любой кнопки и предупреждение (NaN)
+                 снова будет выводитья.
+                    Функция 'parseAnyValue()' прежде чем проводить преобразование типа проверяет значение поля ввода, вместо пустой
+                строки возвращает 0. Также можно использовать неявное приведение типов вычитая из пустой строки 0
+                (или умножая/деля на 1). Предупреждение в консоли (NaN) не появляется.
+                    Таким образом добавление фрагмента 'value="0" onFocus="this.select()"' являюется избыточным, а для обработки ошибки достаточно использовать функцию 'parseAnyValue()' (index.js строка 42)
+             -->
+
+            <input type="number" id="width1" class="input" placeholder="Enter width" />
+            x
+            <input type="number" id="length1" class="input" placeholder="Enter length" />
+            =
+            <input type="number" class="input" disabled id="surface1" placeholder="Surface (Rectangle 1)" />
+        </div>
+
+        <h2>Rectangle 2</h2>
+        <div>
+            <input type="number" class="input" id="width2" placeholder="Enter width" />
+            x
+            <input type="number" class="input" id="length2" placeholder="Enter length" />
+            =
+            <input type="number" class="input" disabled id="surface2" placeholder="Surface (Rectangle 2)" />
+        </div>
+
+        <div class="answer">
+            <button id="calculate" class="btn btn-accent">Get answer</button>
+            <input type="text" id="output" class="input" placeholder="Difference of surfaces" disabled
+                style="width: 300px;" />
+        </div>
+    </main>
+</body>
+<script type="module" src="js/index.js"></script>
+
+</html>

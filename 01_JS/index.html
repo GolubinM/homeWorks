@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 class="nav-brand">CalculatorX</h1>
+    </nav>
+
+    <main class="container">
+        <div class="calculator-column">
+            <input type="text" id="output" readonly />
+            <div id="calculator">
+                <button class="operation " data-action="clear">Ce</button>
+                <button class="operation" data-action="clear-all">C</button>
+                <button class="operation memory-btn" data-action="to-memory">
+                    M
+                    <div class="memory-full-logo" id="mem-logo"></div>
+                </button>
+                <button class="operation" data-action="from-memory">MR</button>
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button class="operation" data-action="divide"> ÷ </button>
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+                <button class="operation" data-action="multiply"> × </button>
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button class="operation" data-action="subtract"> - </button>
+                <button class="plus-minus" data-action="changeSigne">+/-</button>
+                <button class="number zero">0</button>
+                <button class="equal"> = </button>
+                <button class="operation" data-action="sum"> + </button>
+            </div>
+        </div>
+        <div class="comment-column">
+            <ul>
+                <h2>Добавлено:</h2>
+                <li>Работа с отрицательными числами</li>
+                <li>Запись значения в ячейку памяти</li>
+                <li>Извлечение значения из ячейки памяти</li>
+                <li>Возможность стирать окно ввода</li>
+                <li>Возможность стирать окно ввода вместе с очисткой ячейки памяти</li>
+                <li>Обработка ошибки при делении на 0</li>
+
+            </ul>
+        </div>
+    </main>
+
+    <div class="testdiag">
+        <div class="testdiag__class2">
+            <div class="testdiag__class2 testdiag__class2--red"></div>
+            
+        </div>
+        
+    </div>
+
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>

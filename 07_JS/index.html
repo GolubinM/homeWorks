@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Classroom">
+  <title>Classroom 3</title>
+  <link rel='icon' href='data:;base64,='>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <h1 class="nav-brand">Shopping list</h1>
+  </nav>
+
+  <main class="container">
+    <form id="shopping-list-form">
+      <label class="label" for="component-name">Add item</label>
+      <input type="string" class="input" required placeholder="Item (example: Pasta)" id="item-name">
+      <input type="submit" class="btn btn-default" value="Add" />
+    </form>
+
+    <ul id="shopping-list"></ul>
+    <hr />
+    <strong>Exported CSV</strong>
+    <p id="exported-json"></p>
+  </main>
+
+</body>
+<script type="module" src="js/index.js"></script>
+
+</html>

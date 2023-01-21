@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home task 03 JS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 class="nav-brand">KM to Miles converter</h1>
+    </nav>
+
+    <section class="container">
+        <div>
+            <label class="label" for="km-input">Enter the number in kilometers</label>
+            <input type="number" class="input" placeholder="Number" id="km-input" autocomplete="off"> <span
+                class="unit">km is </span>
+            <input type="number" class="input" placeholder="Result" disabled id="miles-output" autocomplete="off"> miles
+        </div>
+
+
+    </section>
+    <nav class="navbar">
+        <h1 class="nav-brand">Celsius to Fahrenheit converter</h1>
+    </nav>
+
+    <section class="container">
+        <div>
+            <label class="label" for="c-input">Enter the number in Celsius</label>
+            <input type="number" class="input" placeholder="Number" id="c-input" autocomplete="off"> <span
+                class="unit">Celsius is</span>
+            <input type="number" class="input" placeholder="Result" disabled id="f-output" autocomplete="off">
+            Fahrenheit
+        </div>
+    </section>
+
+    <nav class="navbar">
+        <h1 class="nav-brand">task. Closures</h1>
+    </nav>
+
+    <section class="container closure-task">
+        <button id="app-button">Start game</button>
+        <div class="counters">
+            <p>"game started!" - <input class="input game" disabled id="game-started" size=4 autocomplete="off"></p>
+            <p>"log analytics!" - <input class="input game" disabled id="log-analytics" size=4 autocomplete="off"></p>
+        </div>
+    </section>
+
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>

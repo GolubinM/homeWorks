@@ -1,0 +1,253 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --primary-1: #2b8379;
+  --primary-2: #19a596;
+  --primary-3: #7fd1c7;
+  --primary-4: #7fd1c7;
+  --primary-5: #d0f3ef;
+  --neutral-1: #2c2c2c;
+  --neutral-2: #434343;
+  --neutral-3: #94868b;
+  --neutral-4: #d9cfd3;
+  --neutral-5: #f2ecee;
+  --accent-1: #970e3d;
+  --accent-2: #c43464;
+  --accent-3: #de7699;
+  --accent-4: #e6c3ce;
+  --accent-5: #fff2f7;
+}
+
+body {
+  background-color: var(--neutral-5);
+  margin: 0;
+  font-family: Open-Sans, sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+a {
+  color: var(--primary-2);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.rounded {
+  border-radius: 30px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  cursor: pointer;
+  border: 0;
+  border-radius: 3px;
+  padding: 13px 40px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color .2s, color .2s;
+  display: inline-block;
+}
+
+.btn-default {
+  color: var(--white);
+  background-color: var(--primary-1);
+}
+
+.btn-default:hover, .btn-outline:hover {
+  color: var(--white);
+  background-color: var(--primary-2);
+  text-decoration: none;
+}
+
+.btn-default:active, .btn-outline:active {
+  color: var(--primary-1);
+  background-color: var(--primary-4);
+}
+
+.btn-default[disabled], .btn-outline[disabled] {
+  color: var(--primary-4);
+  background-color: var(--primary-5);
+  cursor: default;
+}
+
+.btn-accent {
+  color: var(--white);
+  background-color: var(--accent-1);
+}
+
+.btn-accent:hover {
+  color: var(--white);
+  background-color: var(--accent-2);
+  text-decoration: none;
+}
+
+.btn-accent:active {
+  color: var(--accent-1);
+  background-color: var(--accent-4);
+}
+
+.btn-accent[disabled] {
+  color: var(--accent-4);
+  background-color: var(--accent-5);
+  cursor: default;
+}
+
+.btn-outline {
+  color: var(--primary-1);
+  background-color: var(--primary-4);
+  border: var(--primary-1) 2px solid;
+  border-radius: 10px;
+  padding: 8px 25px;
+  box-shadow: 1px 1px 7px #c4c4c4;
+}
+
+#grades-form {
+  margin-bottom: 24px;
+}
+
+.form h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.form h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.form-section {
+  border-bottom: var(--neutral-4) solid 1px;
+  margin-bottom: 20px;
+}
+
+.input-required {
+  color: var(--primary-2);
+  padding: 0 1px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.label {
+  font-weight: 500;
+  display: block;
+}
+
+.input {
+  min-width: 200px;
+  border: none;
+  border-left: 7px solid var(--neutral-4);
+  background-color: #fff;
+  padding: .75em .5em;
+  font-size: 16px;
+  transition: border-left-color .16s;
+}
+
+::placeholder {
+  color: var(--neutral-3);
+}
+
+.input:focus {
+  border-left: 7px solid var(--primary-1);
+  outline: none;
+}
+
+select {
+  outline: none;
+}
+
+.navbar {
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: flex;
+  box-shadow: 0 3px 7px 1px #00000012, 0 -3px 7px 1px #00000012;
+}
+
+.nav-brand {
+  color: initial;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  font-weight: 450;
+  text-decoration: none;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead {
+  background-color: var(--primary-1);
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.table th {
+  padding: 15px;
+}
+
+.table td {
+  padding: 10px;
+}
+
+.table tbody {
+  border: 1px solid #fff;
+  font-size: 18px;
+}
+
+.table tbody tr:nth-child(2n) {
+  background-color: #fff;
+}
+
+.table tbody tr:nth-child(2n+1) {
+  background-color: var(--neutral-5);
+}
+
+.table-center {
+  text-align: center;
+}
+
+#grades-form label {
+  padding-bottom: 10px;
+}
+
+#grades-form input {
+  margin-right: 10px;
+}
+
+#stats-table2 {
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=index.b2625c6b.css.map */

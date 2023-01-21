@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport preview</title>
+    <link rel='icon' href='data:;base64,='>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="nav-brand">Passport preview</h1>
+      </nav>
+      
+      <main class="container">
+        <div class="names-input">
+          <div>
+            <label class="label" for="component-name">Enter your first name</label>
+            <input type="text" class="input" placeholder="Your first name" id="first-name" autocomplete="off">
+          </div>
+          <div>
+            <label class="label" for="component-name">Enter your last name</label>
+            <input type="text" class="input" placeholder="Your last name" id="last-name" autocomplete="off">
+          </div>
+        </div>
+      
+        <div class="table-container">
+          <table class="table" border="1">
+            <thead>
+              <tr>
+                <th width="200px"></th>
+                <th>Your data</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>First name</td>
+                <td id="answer1"></td>
+              </tr>
+              <tr>
+                <td>Last name</td>
+                <td id="answer2"></td>
+              </tr>
+              <tr>
+                <td>Full Name</td>
+                <td id="answer3"></td>
+              </tr>
+              <tr>
+                <td>Initials</td>
+                <td id="answer4"></td>
+              </tr>
+              <tr>
+                <td>Valid name?</td>
+                <td id="answer5"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+      <script type="module" src="js/index.js"></script> 
+</body>
+</html>

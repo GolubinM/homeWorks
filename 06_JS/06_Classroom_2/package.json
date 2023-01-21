@@ -1,0 +1,15 @@
+{
+  "name": "06_classroom_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "parcel index.html --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "GolubinM",
+  "license": "ISC",
+  "dependencies": {
+    "snackbar": "^1.1.0"
+  }
+}

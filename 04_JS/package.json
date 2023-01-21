@@ -1,0 +1,15 @@
+{
+  "name": "home-task-4",
+  "version": "1.0.0",
+  "description": "formatted names; celsius to fahrenheit; closures",
+  "main": "index.js",
+  "scripts": {
+    "serve": "parcel index.html --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Golubin M",
+  "license": "ISC",
+  "dependencies": {
+    "party-js": "^2.2.0"
+  }
+}
