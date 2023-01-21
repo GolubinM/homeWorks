@@ -1,0 +1,38 @@
+.sidebar {
+  height: 100%;
+  width: auto;
+  min-width: 250px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 30px;
+  background-color: rgb(237, 224, 206);
+}
+
+.sidebar a {
+  padding: 8px 25px;
+  font-size: 24px;
+  display: block;
+  text-decoration: none;
+  color: rgb(134, 82, 9);
+}
+
+.sidebar a:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.body-text {
+  margin-left: 200px;
+  font-size: 18px;
+}
+.labelchk {
+  font-size: 16px;
+  display: inline-block;;
+  padding: 8px 15px 8px 25px;
+  margin-bottom: 20px;
+}
+.checkbox{
+  margin-top: 11px;
+  vertical-align: top;
+}
