@@ -1,0 +1,128 @@
+:root {
+  --light-gray: #dadce0;
+  --teal: #009688;
+  --dark-blue: #3f51b5;
+  --dark: #232323;
+}
+
+body {
+  margin: 0;
+  background-color: var(--light-gray);
+  font-family: "Open-Sans", sans-serif;
+}
+
+.modal {
+  opacity: 0;
+  transition: transform 140ms ease-out, opacity 140ms ease-out;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--teal);
+  height: 100vh;
+  transform: translateY(80px);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  pointer-events: none;
+}
+.modal.show {
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events: auto;
+}
+
+.modal h1 {
+  margin-top: 0;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+}
+
+nav {
+  background-color: var(--dark-blue);
+  color: white;
+  padding: 20px 30px;
+}
+nav h1 {
+  margin: 0;
+}
+
+#list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 20px;
+}
+#list li {
+  padding: 25px 20px;
+  background-color: white;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  margin: 15px 0;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: opacity 160ms ease-out, transform 160ms ease-out;
+}
+
+.button-fab {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  box-shadow: none;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  transition: opacity 160ms, transform 160ms;
+  background-color: var(--teal);
+}
+.button-fab:hover {
+  opacity: 0.9;
+}
+.button-fab:active {
+  transform: translate(1px, 1px);
+}
+.button-fab.rotate {
+  transform: rotateZ(135deg);
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.textfield {
+  padding: 15px;
+  border-radius: 2px;
+  border: 1px solid var(--light-gray);
+  font-size: 16px;
+  width: 100%;
+  transition: opacity 200ms ease-out;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: var(--dark-blue);
+  color: white;
+  border: 0;
+  padding: 15px 20px;
+  min-width: 150px;
+  font-size: 16px;
+  min-height: 50px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: opacity 200ms ease-out;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+label {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: inline-block;
+}
